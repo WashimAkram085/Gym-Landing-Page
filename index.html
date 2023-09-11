@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram's Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*css reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background-image: url('bg2.jpg');
+            background-repeat: no-repeat;
+            background-size: 1300px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 14px;
+            top: 10px;
+            width: 30%;
+        }
+
+        .left img {
+            width: 85px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+            font-size: medium;
+        }
+
+        .mid {
+            display: block;
+            width: 55%;
+            margin: 20px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 5px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(193, 193, 74);
+        }
+
+        .btn {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 15px 5px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+
+        }
+
+        .btn :hover {
+            background-color: rgb(74, 71, 71);
+        }
+
+        .container {
+            border: 2px solid rgb(255, 255, 255);
+            margin: 200px 700px 10px 50px;
+            padding: 30px 75px;
+            border-radius: 5px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px 10px -4px 35px;
+            border-radius: 8px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .container h1 {
+            text-align: center;
+            color: rgb(8 206 94);
+        }
+
+        .container button {
+            display: block;
+            width: 52%;
+            margin:20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- left for logo -->
+        <div class="left">
+            <div class="left">
+                <img src="logo.png" alt="">
+                <div>Akram's Fitness</div>
+            </div>
+        </div>
+        <!-- mid for nagbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Contact</button>
+            <button class="btn">Notice</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Assam now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name...">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Father's/Mother's name...">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Phone no.">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email id.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
